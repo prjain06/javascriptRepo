@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Java Script Example</title>
+<style>
+	.test{
+		font-family: 'Times New Roman', Times, serif;
+		font-style: italic;
+	}
+	.center{
+		text-align: center;
+	}
+	.button{
+		background-color: lightblue;
+		color: black;
+		height: 50px;
+		width: 200px;
+		font-family:  Verdana, Geneva, Tahoma, sans-serif;
+		font-weight: 100;
+		font-variant: small-caps;
+		font-stretch: condensed;
+	}
+	input{
+		background-color: whitesmoke;
+		border: 0cm;
+		height: 50px;
+		width: 400px;
+	}
+</style>
+<script>
+	
+</script>
+</head>
+<body>
+<div id="header">
+	<h1> Example of JavaScipt</h1>
+	<button id="btnClick">click on Me</button>
+	<input type="text" id="text1"> </input>
+</div>
+
+<script>
+	
+	document.getElementById("btnClick").onclick = setBack;
+	function setBack(){
+		var f = document.querySelector("#header").style.backgroundColor = 'blue';
+	document.querySelector("#header").classList.add("test","center");
+	document.querySelector("#btnClick").classList.add("button");
+	console.log(f);
+	}
+
+</script>
+	
+
+
+</body>
+</html> 
