@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Java Script Example</title>
+<style>
+	.test{
+		font-family: 'Times New Roman', Times, serif;
+		font-style: italic;
+		text-align: center;
+		background-color: lightblue;
+		color: black;
+		height: 500px;
+		width: 500px;
+		
+	}
+</style>
+</head>
+<body>
+<div id="header">
+	<h1> Example of JavaScipt</h1>	
+</div>
+<div id="test">
+	<h1> No Action perform here</h1>
+</div>
+
+<script>
+	
+	// document.getElementById("header").onmouseenter = setBackGroundColor;
+	// document.getElementById("header").onmouseleave = removeBackGroundColor;
+
+	document.getElementById("header").addEventListener("mouseenter",setBackGroundColor);
+	document.getElementById("header").addEventListener("click",function(){
+		document.getElementById("header").style.border = '10px solid black';
+	});
+	document.getElementById("header").addEventListener("mouseleave",function(){
+		document.getElementById("header").removeEventListener("mouseenter",setBackGroundColor);
+	});
+	function setBackGroundColor(){
+		document.querySelector("#header").style.backgroundColor = 'blue';
+	}
+	// function removeBackGroundColor(){
+		// document.querySelector("#header").style.backgroundColor = '';
+	// }
+
+</script>
+	
+
+
+</body>
+</html> 
