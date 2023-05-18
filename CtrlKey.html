@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Java Script Example</title>
+<style>
+	#test{
+		font-family: 'Times New Roman', Times, serif;
+		font-style: italic;
+		text-align: center;
+		background-color: lightblue;
+		color: black;
+		height: 500px;
+		width: 500px;
+		margin: 20px;
+		
+	}
+</style>
+</head>
+<body>
+<div id="test"></div>
+<input type="text" onkeydown="checkKey(this)"/>
+<p id="de"></p>
+<script>
+	var target = document.getElementById("test");
+	target.addEventListener('click',function(e){
+		console.log(e.ctrlKey);
+	});
+	
+	function checkKey(event){
+	const e = document.getElementById("de");
+		if(event.ctrlKey)
+			e.innerHTML = "Ctrl Key Pressed";
+		else
+		e.innerHTML = "Ctrl Key not Pressed";
+			
+	
+	}
+	
+	
+
+</script>
+	
+
+
+</body>
+</html> 
